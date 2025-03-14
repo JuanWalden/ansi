@@ -124,10 +124,10 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" role="main">
         <h1>Reinterpretando Síntomas de Ansiedad</h1>
         
-        <div class="info-box">
+        <div class="info-box" aria-label="Información sobre la herramienta">
             <p>Esta herramienta te ayuda a entender mejor los síntomas físicos de ansiedad. Selecciona el síntoma que estás experimentando, comparte lo que crees que significa, y descubre la explicación real detrás de él.</p>
         </div>
 
@@ -136,7 +136,7 @@
             <h2>Formulario de Entrada</h2>
             <div class="form-group">
                 <label for="symptom-select">¿Qué síntoma estás experimentando?</label>
-                <select id="symptom-select" required>
+                <select id="symptom-select" required aria-label="Selecciona un síntoma">
                     <option value="">Selecciona un síntoma</option>
                     <!-- Las opciones se cargarán con JavaScript -->
                 </select>
@@ -144,44 +144,44 @@
             
             <div id="interpretation-container" class="form-group" style="display: none;">
                 <label for="user-interpretation">¿Qué crees que significa este síntoma? ¿Qué te preocupa que pueda ser?</label>
-                <textarea id="user-interpretation" rows="3" placeholder="Escribe aquí tu interpretación..." required></textarea>
+                <textarea id="user-interpretation" rows="3" placeholder="Escribe aquí tu interpretación..." required aria-label="Escribe tu interpretación"></textarea>
             </div>
             
-            <button id="submit-button" style="display: none;">Ver explicación</button>
+            <button id="submit-button" style="display: none;" aria-label="Ver explicación">Ver explicación</button>
         </div>
 
         <!-- Vista de resultados -->
         <div id="results-view">
             <h2>Resultados</h2>
-            <div class="result-box symptom-box">
+            <div class="result-box symptom-box" aria-label="Tu síntoma">
                 <h3>Tu síntoma:</h3>
                 <p id="result-symptom" style="font-weight: bold;"></p>
             </div>
             
-            <div class="result-box user-interpretation-box">
+            <div class="result-box user-interpretation-box" aria-label="Tu interpretación">
                 <h3>Tu interpretación:</h3>
                 <p id="result-user-interpretation"></p>
             </div>
             
-            <div class="result-box common-interpretation-box">
+            <div class="result-box common-interpretation-box" aria-label="Interpretación común">
                 <h3>Interpretación común:</h3>
                 <p id="result-common-interpretation"></p>
             </div>
             
-            <div class="result-box real-cause-box">
+            <div class="result-box real-cause-box" aria-label="Causa real">
                 <h3>Causa real:</h3>
                 <p id="result-real-cause"></p>
             </div>
             
-            <div class="result-box reminder-box">
+            <div class="result-box reminder-box" aria-label="Recordatorio">
                 <h3>Recuerda:</h3>
                 <p>Los síntomas de ansiedad, aunque incómodos, no son peligrosos. Son respuestas normales del cuerpo ante el estrés y la ansiedad.</p>
             </div>
             
-            <button id="reset-button">Consultar otro síntoma</button>
+            <button id="reset-button" aria-label="Consultar otro síntoma">Consultar otro síntoma</button>
         </div>
 
-        <div class="disclaimer">
+        <div class="disclaimer" aria-label="Aviso legal">
             <p>Esta herramienta es informativa y no sustituye la atención médica profesional.</p>
             <p>Si experimentas síntomas graves o preocupantes, consulta con un profesional de la salud.</p>
         </div>
