@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App del taller de Ansiedad del Centro Rol</title>
-    <h1>Juan Orta<h1>
-<h2>Tu guía para entender mejor tus síntomas</h2>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -91,7 +89,7 @@
         .reminder-box {
             background-color: #eff6ff;
         }
-        h3 {
+        h2, h3 {
             margin-top: 0;
             margin-bottom: 8px;
             font-size: 18px;
@@ -130,11 +128,12 @@
         <h1>Reinterpretando Síntomas de Ansiedad</h1>
         
         <div class="info-box">
-            <p>Esta herramienta te ayuda a entender mejor los síntomas físicos de ansiedad. Selecciona el síntoma que estás experimentando, comparte lo que crees que significa, y descubre la explicación real.</p>
+            <p>Esta herramienta te ayuda a entender mejor los síntomas físicos de ansiedad. Selecciona el síntoma que estás experimentando, comparte lo que crees que significa, y descubre la explicación real detrás de él.</p>
         </div>
 
         <!-- Formulario de entrada -->
         <div id="form-view">
+            <h2>Formulario de Entrada</h2>
             <div class="form-group">
                 <label for="symptom-select">¿Qué síntoma estás experimentando?</label>
                 <select id="symptom-select" required>
@@ -153,6 +152,7 @@
 
         <!-- Vista de resultados -->
         <div id="results-view">
+            <h2>Resultados</h2>
             <div class="result-box symptom-box">
                 <h3>Tu síntoma:</h3>
                 <p id="result-symptom" style="font-weight: bold;"></p>
